@@ -44,17 +44,17 @@ export default defineConfig({
           "AudioGram is a social media platform that allows you to share your music with the world.",
         icons: [
           {
-            src: "/images/android-chrome-192x192.png",
+            src: "/android-chrome-192x192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/images/android-chrome-512x512.png",
+            src: "/android-chrome-512x512.png",
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "/images/apple-touch-icon.png",
+            src: "/apple-touch-icon.png",
             sizes: "180x180",
             type: "image/png",
           },
