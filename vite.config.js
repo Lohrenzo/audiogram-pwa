@@ -7,7 +7,11 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: "prompt",
+      registerType: "autoUpdate",
+      /* enable sw on development */
+      devOptions: {
+        enabled: true,
+      },
       // add this to cache all the imports
       workbox: {
         runtimeCaching: [
