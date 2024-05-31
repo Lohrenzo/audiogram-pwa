@@ -7,7 +7,8 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: "autoUpdate",
+      // registerType: "autoUpdate",
+      registerType: "prompt",
       /* enable sw on development */
       devOptions: {
         enabled: true,
@@ -19,7 +20,7 @@ export default defineConfig({
             urlPattern: ({ url }) => {
               return url.pathname.startsWith("/api");
             },
-            handler: "CacheFirst",
+            handler: "NetworkOnly",
             options: {
               cacheName: "audios-cache",
               cacheableResponse: {
@@ -36,6 +37,7 @@ export default defineConfig({
         "favicon.ico",
         "apple-touch-icon.png",
         "safari-pinned-tab.svg",
+        "happy_music.svg",
       ],
       manifest: {
         name: "Audiogram",
