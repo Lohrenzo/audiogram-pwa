@@ -38,6 +38,7 @@ export default defineConfig({
         "apple-touch-icon.png",
         "safari-pinned-tab.svg",
         "happy_music.svg",
+        "audiogram-removebg.png",
       ],
       manifest: {
         name: "Audiogram",

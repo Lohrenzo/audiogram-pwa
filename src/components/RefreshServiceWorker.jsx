@@ -58,7 +58,7 @@ const RefreshServiceWorker = ({ onReload }) => {
     <>
       {needRefresh && (
         <div
-          className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[300px] cursor-pointer backdrop-blur-md bg-black/60 text-sm text-white bg-blue-500 p-1 rounded-md flex flex-col items-center justify-center`}
+          className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[300px] z-20 cursor-pointer backdrop-blur-md bg-black/60 shadow-md shadow-white text-sm text-white p-1 rounded-md flex flex-col items-center justify-center`}
           onMouseDown={handlePressStart}
           onMouseUp={handlePressEnd}
           onMouseLeave={handlePressEnd}
